@@ -303,7 +303,7 @@ body{background-color:var(--paper);
 /* ====== إعدادات النسخة (تتغير عند «تنزيل نسخة الطالبات بالإعدادات الجديدة») ====== */
 const CFG = /*CFG*/{"scriptUrl":"https://script.google.com/macros/s/AKfycbyu9dpGNV0JKix1fbMDrqHBtfblp2Bdfj1nb4_9zbhU6T8ea5O23V66_6C7IgFSHHKOWQ/exec","classes":[{"name":"١/٣","size":30},{"name":"٢/٣","size":21}]}/*ENDCFG*/;
 const APP = {
-  version:'1.0', versionDate:'2026-11-08',
+  version:'1.1', versionDate:'2026-11-10',
   trip:'رحلة القياس والهندسة', /* اسم ورقة هذه الرحلة داخل جدول قوقل المشترك */
   title:'رحلة الرياضيات: القياس والهندسة',
   school:'متوسطة السيل الصغير', admin:'إدارة تعليم الطائف',
@@ -2500,7 +2500,28 @@ const STAGES = [
 }
 ];
 /* روابط حقيقية تم التحقق منها؛ الباقي تضيفينه من الإعدادات */
-const DEFAULT_MEDIA = {};
+const DEFAULT_MEDIA = {
+ "m1": {
+  "video": "https://sahl.io/sa/lecture/272260/%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D8%AA%D9%88%D8%B3%D8%B7/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B6%D9%84%D8%B9%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D9%8A%D8%A7",
+  "game": "https://wordwall.net/resource/39705238/%D8%A7%D9%84%D9%85%D8%B6%D9%84%D8%B9%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D9%8A%D8%A7"
+ },
+ "m2": {
+  "video": "https://sahl.io/sa/lecture/5831/%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D8%AA%D9%88%D8%B3%D8%B7/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A%D8%AB%D8%A7%D8%BA%D9%88%D8%B1%D8%B3",
+  "game": "https://wordwall.net/ar/resource/5011846/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A%D8%AB%D8%A7%D8%BA%D9%88%D8%B1%D8%B3"
+ },
+ "m3": {
+  "video": "https://sahl.io/sa/lecture/272263/%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D8%AA%D9%88%D8%B3%D8%B7/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/%D8%A7%D9%84%D8%A7%D9%86%D8%B9%D9%83%D8%A7%D8%B3?teacher=77",
+  "game": "https://wordwall.net/resource/12444195/%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A7%D9%86"
+ },
+ "m4": {
+  "video": "https://sahl.io/sa/lecture/4223/%D8%A3%D9%88%D9%84-%D9%85%D8%AA%D9%88%D8%B3%D8%B7/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/%D9%85%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D8%A9?teacher=200404",
+  "game": "https://wordwall.net/ar-sa/community/%D9%85%D8%AD%D9%8A%D8%B7-%D9%88%D9%85%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D8%A9"
+ },
+ "m5": {
+  "video": "https://www.sahl.io/sa/lecture/6013/%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D8%AA%D9%88%D8%B3%D8%B7/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/%D8%AD%D8%AC%D9%85-%D8%A7%D9%84%D9%87%D8%B1%D9%85",
+  "game": "https://wordwall.net/ar/resource/71996369/%D8%AD%D8%AC%D9%85-%D8%A7%D9%84%D9%87%D8%B1%D9%85-%D9%88-%D8%A7%D9%84%D9%85%D8%AE%D8%B1%D9%88%D8%B7"
+ }
+};
 </script>
 <script>
 /* ================= أدوات عامة ================= */
